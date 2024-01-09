@@ -8,7 +8,6 @@ const Navbar = () => {
   const [menu, setMenu] = useState(false);
   return (
     <div className={styles.main}>
-      <div className={styles.line}></div>
       <div className={styles.content}>
         <GiHamburgerMenu
           className={styles.hamburger}
@@ -26,7 +25,7 @@ const Navbar = () => {
           <NavLink to="email_marketing" className={styles.link}>
             Email Marketing
           </NavLink>
-          <NavLink to="dat_science" className={styles.link}>
+          <NavLink to="data_science" className={styles.link}>
             Data Science
           </NavLink>
           <NavLink to="video_marketing" className={styles.link}>
@@ -44,8 +43,7 @@ const Navbar = () => {
       {menu && (
         <div className={styles.mobile_menu}>
           <div className={styles.name_div}>
-            <h1 className={styles.name}>Avocent</h1>
-            <span className={styles.motto}>Architects of continuity...</span>
+            <h1 className={styles.name}>Solhezy</h1>
           </div>
           <div className={styles.links}>
             <NavLink
@@ -56,25 +54,25 @@ const Navbar = () => {
               Home
             </NavLink>
             <NavLink
-              to="onboarding"
+              to="email_marketing"
               className={styles.link}
               onClick={() => setMenu(false)}
             >
-              Onboarding
+              Email Marketing
             </NavLink>
             <NavLink
-              to="loans"
+              to="video_marketing"
               className={styles.link}
               onClick={() => setMenu(false)}
             >
-              Loans
+              Video Marketing
             </NavLink>
             <NavLink
-              to="products"
+              to="data_science"
               className={styles.link}
               onClick={() => setMenu(false)}
             >
-              Products & Services
+              Data Science
             </NavLink>
             <NavLink
               to="about"
@@ -91,7 +89,6 @@ const Navbar = () => {
               Contact
             </NavLink>
           </div>
-          <button className={styles.btn}>LOGIN</button>
           <ImCross className={styles.cross} onClick={() => setMenu(false)} />
         </div>
       )}

@@ -1,0 +1,58 @@
+.swiper {
+  width: 800px;
+  height: 300px;
+}
+
+.main {
+  width: 100%;
+  height: 38rem;
+  background: linear-gradient(180deg, #006dff, #006eff80),
+    url("../../assets/bannerImageDesktop.jpg");
+  background-position: bottom;
+  background-size: cover;
+  border-bottom-left-radius: 70%;
+  border-bottom-right-radius: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @media screen and (max-width: 800px) {
+    border-bottom-left-radius: 20%;
+    border-bottom-right-radius: 20%;
+  }
+  .swiper {
+    width: 80%;
+    height: 80%;
+    .swiper_slide {
+      .con {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+
+        .text {
+          font-size: 3rem;
+          font-weight: 700;
+          font-family: "Rubik", sans-serif;
+          color: white;
+          text-align: center;
+
+          @media screen and (max-width: 800px) {
+            font-size: 1.5rem;
+          }
+        }
+        .link {
+          text-decoration: none;
+          color: #006dff;
+          background-color: white;
+          padding: 1rem 1.5rem;
+          font-size: 1rem;
+          font-weight: 500;
+          border-radius: 30px;
+        }
+      }
+    }
+  }
+}

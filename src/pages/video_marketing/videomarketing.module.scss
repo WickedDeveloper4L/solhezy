@@ -1,0 +1,40 @@
+.main {
+  padding: 4rem 10rem;
+  display: grid;
+  grid-template-columns: 60% 40%;
+  width: 100%;
+  @media screen and (max-width: 650px) {
+    grid-template-columns: 1fr;
+    padding: 2rem 1rem;
+  }
+
+  .left {
+    display: grid;
+    gap: 1rem;
+    .title {
+      font-size: 3.5rem;
+      font-weight: 700;
+      font-family: "Rubik", sans-serif;
+      color: #006dff;
+    }
+
+    .catchline {
+      font-size: 1.8rem;
+      font-weight: 600;
+      color: black;
+    }
+
+    .desc {
+      font-size: 1.1rem;
+      font-weight: 500;
+      color: black;
+    }
+    .subheading {
+      font-size: 2rem;
+      font-weight: 400;
+      font-family: "Rubik", sans-serif;
+      color: #006dff;
+      padding-top: 1rem;
+    }
+  }
+}
