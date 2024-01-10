@@ -1,9 +1,17 @@
+import { Helmet } from "react-helmet";
 import ListItem from "../../components/list item/ListItem";
 import PageContact from "../../components/page-contact/pageContact";
 import styles from "./videomarketing.module.scss";
 const VideoMarketing = () => {
   return (
     <div className={styles.main}>
+      <Helmet>
+        <title>Video Marketing • Solhezy</title>
+        <meta
+          name="description"
+          content="let's get started on Video marketing"
+        />
+      </Helmet>
       <div className={styles.left}>
         <span className={styles.title}>Video Marketing</span>
 
@@ -111,7 +119,7 @@ const VideoMarketing = () => {
 
             <div>
               <ListItem
-                heading={"Diffusiong"}
+                heading={"Diffusion"}
                 number={3}
                 content={
                   "We collaborate with a wide network of global premium databases. We test how different databases perform by sending small volumes of emails at first to identify the ones that provide the best quality in relation to cost per lead and cost per acquisition."

@@ -1,9 +1,17 @@
 import styles from "./emailmarketing.module.scss";
 import ListItem from "../../components/list item/ListItem";
 import PageContact from "../../components/page-contact/pageContact";
+import { Helmet } from "react-helmet";
 const Emailmarketing = () => {
   return (
     <div className={styles.main}>
+      <Helmet>
+        <title>Email Marketing • Solhezy</title>
+        <meta
+          name="description"
+          content="let's get started on email marketing"
+        />
+      </Helmet>
       <div className={styles.left}>
         <span className={styles.title}>Email Marketing</span>
         <span className={styles.catchline}>
@@ -103,7 +111,7 @@ const Emailmarketing = () => {
 
             <div>
               <ListItem
-                heading={"Diffusiong"}
+                heading={"Diffusion"}
                 number={3}
                 content={
                   "We collaborate with a wide network of global premium databases. We test how different databases perform by sending small volumes of emails at first to identify the ones that provide the best quality in relation to cost per lead and cost per acquisition."

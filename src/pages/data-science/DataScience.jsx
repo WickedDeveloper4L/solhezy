@@ -1,26 +1,30 @@
 import { Helmet } from "react-helmet";
 import ListItem from "../../components/list item/ListItem";
+import styles from "./datascience.module.scss";
 import PageContact from "../../components/page-contact/pageContact";
-import styles from "./contact.module.scss";
-
-const Contact = () => {
+const DataScience = () => {
   return (
     <div className={styles.main}>
       <Helmet>
-        <title>Contact • Solhezy</title>
-        <meta name="description" content="we want to speak with you!" />
+        <title>Data Science • Solhezy</title>
+        <meta name="description" content="let's get started on data." />
       </Helmet>
       <div className={styles.left}>
-        <span className={styles.title}>Contact</span>
-
+        <span className={styles.title}>Data Science</span>
+        <span className={styles.catchline}>The Power of Data</span>
         <span className={styles.desc}>
-          Work with our incredibly talented team! We will analyze your strategy,
-          determine your needs and, with a focus on results and budget
-          optimization, offer you the best solution. Please don’t hesitate to
-          reach out and contact us!
+          Today, your company generates a large amount of data that, if treated
+          in the right way, can bring a lot of value to your marketing and sales
+          strategies. Customer retention, the promotion of more personalized
+          sales, and the reduction of acquisition costs are some examples of the
+          benefits. Thanks to the expertise of our team of Data Scientists and
+          Marketing Strategists, we can leverage all this data to generate
+          high-level business intelligence.
         </span>
 
-        <span className={styles.subheading}>How Solhezy Can Help You</span>
+        <span className={styles.subheading}>
+          How Solhezy Can Use Data To Help You
+        </span>
         <span className={styles.desc}>
           Solhezy works with you from the beginning to understand your goals,
           advise you on the best strategy, and provide you with access to
@@ -71,9 +75,9 @@ const Contact = () => {
           </div>
         </div>
       </div>
-      <PageContact title="We want to speak with you!" />
+      <PageContact title="Let's create an effective data driven strategy together." />
     </div>
   );
 };
 
-export default Contact;
+export default DataScience;

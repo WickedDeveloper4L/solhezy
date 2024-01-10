@@ -1,0 +1,88 @@
+.main {
+  padding: 4rem 10rem;
+  display: grid;
+  grid-template-columns: 60% 40%;
+  width: 100%;
+  @media screen and (max-width: 650px) {
+    grid-template-columns: 1fr;
+    padding: 2rem 1rem;
+  }
+
+  .left {
+    display: grid;
+    gap: 1rem;
+    height: fit-content;
+    .title {
+      font-size: 3.5rem;
+      font-weight: 700;
+      font-family: "Rubik", sans-serif;
+      color: #006dff;
+    }
+
+    .catchline {
+      font-size: 1.8rem;
+      font-weight: 600;
+      color: black;
+    }
+
+    .desc {
+      font-size: 1.1rem;
+      font-weight: 500;
+      color: black;
+    }
+    .subheading {
+      font-size: 2rem;
+      font-weight: 400;
+      font-family: "Rubik", sans-serif;
+      color: #006dff;
+      padding-top: 1rem;
+    }
+    .services {
+      display: grid;
+      grid-template-columns: 1fr;
+      justify-items: center;
+      align-content: center;
+      gap: 2rem;
+      padding: 2rem 1rem;
+      @media screen and (max-width: 800px) {
+        grid-template-columns: 1fr;
+        padding: 2rem 1rem;
+        row-gap: 2rem;
+      }
+
+      .tile {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        justify-content: center;
+        align-items: center;
+        .svg {
+          width: 2.5rem;
+        }
+        .title {
+          font-size: 1.2rem;
+          font-weight: 500;
+          color: #006dff;
+          text-transform: uppercase;
+          text-align: center;
+        }
+        .text {
+          text-align: center;
+          font-size: 0.9rem;
+          font-weight: 400;
+          width: 250px;
+        }
+
+        .link {
+          text-decoration: none;
+          color: white;
+          background-color: #006dff;
+          padding: 1rem 1.5rem;
+          font-size: 1rem;
+          font-weight: 500;
+          border-radius: 30px;
+        }
+      }
+    }
+  }
+}

@@ -14,7 +14,7 @@ const PageContact = ({ title }) => {
   const [text, setText] = useState("");
   const handleSubmit = (e) => {
     e.preventDefault();
-    fetch("https://formsubmit.co/ajax/avocent3@gmail.com", {
+    fetch("https://formsubmit.co/ajax/Isaiah_akorita@yahoo.co.uk", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -105,7 +105,7 @@ const PageContact = ({ title }) => {
           <input
             type="number"
             className={styles.input}
-            placeholder="marketing budget"
+            placeholder="$"
             id="marketing_budget"
             name="marketing_budget"
             onChange={(e) => setMarketingBudget(e.target.value)}
