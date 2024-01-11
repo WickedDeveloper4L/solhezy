@@ -10,7 +10,29 @@ import GETRESPONSE from "../../assets/getresponse_logotype_cmyk-601x219-315ab69.
 import MAILCHIMP from "../../assets/mailchimp-svgrepo-com.svg";
 import WARRIORPLUS from "../../assets/warriorplus.png";
 import { Link } from "react-router-dom";
+import { useState } from "react";
+import { ImCross } from "react-icons/im";
 const Home = () => {
+  const [email, setEmail] = useState("");
+  const [newsletter, setNewsletter] = useState(true);
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    fetch("https://formsubmit.co/ajax/Isaiah_akorita@yahoo.co.uk", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
+      body: JSON.stringify({
+        email: email,
+      }),
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        alert(data.message);
+      })
+      .catch((error) => console.log(error));
+  };
   return (
     <div className={styles.main}>
       <Hero />
@@ -70,6 +92,30 @@ const Home = () => {
           <img src={WARRIORPLUS} alt="warriorplus" className={styles.org_img} />
         </div>
       </div>
+      {newsletter && (
+        <form onSubmit={handleSubmit} className={styles.newsletter}>
+          <span className={styles.text}>Be the first to know.</span>
+          <input
+            type="email"
+            required
+            name="email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            className={styles.input}
+          />
+          <button className={styles.btn} value="submit" type="submit">
+            Subscribe
+          </button>
+          <span className={styles.subtext}>
+            Recieve news, promotions and products by email from Solhezy. You can
+            unsubscribe whenever you want.
+          </span>
+          <ImCross
+            onClick={() => setNewsletter(false)}
+            className={styles.close}
+          />
+        </form>
+      )}
     </div>
   );
 };
