@@ -24,9 +24,15 @@ const Hero = () => {
               several times a day. Believe it or not, email marketing is a
               channel with one of the highest ROIs.
             </span>
-            <Link className="link" to="/email_marketing">
-              LEARN MORE
-            </Link>
+            <a
+              className="link"
+              href="https://airtable.com/appSaNlCf3MbTcDKW/pagGj2WMmqeyXg2UQ/form
+"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Get Started
+            </a>
           </div>
         </SwiperSlide>
         <SwiperSlide className="swiper_slide">
@@ -35,9 +41,15 @@ const Hero = () => {
               Our team is always focused on getting results and optimizing our
               clients’ budgets.
             </span>
-            <Link className="link" to="/video_marketing">
-              LEARN MORE
-            </Link>
+            <a
+              className="link"
+              href="https://airtable.com/appSaNlCf3MbTcDKW/pagGj2WMmqeyXg2UQ/form
+"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Get Started
+            </a>
           </div>
         </SwiperSlide>
       </Swiper>

@@ -5,9 +5,9 @@ const Footer = () => {
   return (
     <div className={styles.footer}>
       <div className={styles.credits}>
-        <p>©Copyright 2024 Solhezy Digital marketing Agency</p>
+        <p>©Copyright 2024 Edwako Digital marketing Agency</p>
       </div>
-      <h1 className={styles.title}>Solhezy</h1>
+      <h1 className={styles.title}>Edwako</h1>
       <div className={styles.links}>
         <Link to="/" className={styles.link}>
           Home

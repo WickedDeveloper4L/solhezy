@@ -6,7 +6,7 @@ const DataScience = () => {
   return (
     <div className={styles.main}>
       <Helmet>
-        <title>Data Science • Solhezy</title>
+        <title>Data Science • Edwako</title>
         <meta name="description" content="let's get started on data." />
       </Helmet>
       <div className={styles.left}>
@@ -23,10 +23,10 @@ const DataScience = () => {
         </span>
 
         <span className={styles.subheading}>
-          How Solhezy Can Use Data To Help You
+          How Edwako Can Use Data To Help You
         </span>
         <span className={styles.desc}>
-          Solhezy works with you from the beginning to understand your goals,
+          Edwako works with you from the beginning to understand your goals,
           advise you on the best strategy, and provide you with access to
           premium databases.
         </span>

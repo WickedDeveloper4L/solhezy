@@ -94,16 +94,15 @@
     }
 
     .orgs {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      justify-items: center;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
       align-content: center;
-      column-gap: 2rem;
+      gap: 3rem;
       padding: 2rem 10rem;
       @media screen and (max-width: 800px) {
-        grid-template-columns: 1fr;
         padding: 2rem 1rem;
-        row-gap: 2rem;
+        gap: 2rem;
       }
 
       .org_img {

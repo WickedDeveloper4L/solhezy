@@ -15,7 +15,7 @@ const Navbar = () => {
         />
         <div className={styles.first}>
           <div className={styles.name_div}>
-            <h1 className={styles.name}>Solhezy</h1>
+            <h1 className={styles.name}>Edwako</h1>
           </div>
         </div>
         <div className={styles.links}>
@@ -43,7 +43,7 @@ const Navbar = () => {
       {menu && (
         <div className={styles.mobile_menu}>
           <div className={styles.name_div}>
-            <h1 className={styles.name}>Solhezy</h1>
+            <h1 className={styles.name}>Edwako</h1>
           </div>
           <div className={styles.links}>
             <NavLink

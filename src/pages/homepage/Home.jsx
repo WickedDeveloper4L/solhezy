@@ -3,12 +3,10 @@ import styles from "./home.module.scss";
 import EMAIL from "../../assets/email-marketing-advertising-svgrepo-com.svg";
 import VIDEO from "../../assets/video-marketing-advertising-svgrepo-com.svg";
 import DATA from "../../assets/graph-analytics-business-svgrepo-com.svg";
-import EXPERTNAIRE from "../../assets/expertnaire.png";
 import ZOHO from "../../assets/zoho.svg";
 import SYSTEME from "../../assets/systeme.png";
 import GETRESPONSE from "../../assets/getresponse_logotype_cmyk-601x219-315ab69.png";
 import MAILCHIMP from "../../assets/mailchimp-svgrepo-com.svg";
-import WARRIORPLUS from "../../assets/warriorplus.png";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import { ImCross } from "react-icons/im";
@@ -84,12 +82,10 @@ const Home = () => {
       <div className={styles.second}>
         <h1 className={styles.title}>Badged Member of</h1>
         <div className={styles.orgs}>
-          <img src={EXPERTNAIRE} alt="expertnaire" className={styles.org_img} />
           <img src={MAILCHIMP} alt="mailchimp" className={styles.org_img} />
           <img src={GETRESPONSE} alt="getresponse" className={styles.org_img} />
           <img src={ZOHO} alt="zoho" className={styles.org_img} />
           <img src={SYSTEME} alt="systeme" className={styles.org_img} />
-          <img src={WARRIORPLUS} alt="warriorplus" className={styles.org_img} />
         </div>
       </div>
       {newsletter && (
@@ -107,7 +103,7 @@ const Home = () => {
             Subscribe
           </button>
           <span className={styles.subtext}>
-            Recieve news, promotions and products by email from Solhezy. You can
+            Recieve news, promotions and products by email from Edwako. You can
             unsubscribe whenever you want.
           </span>
           <ImCross

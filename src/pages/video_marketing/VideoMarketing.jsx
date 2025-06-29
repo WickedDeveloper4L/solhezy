@@ -6,7 +6,7 @@ const VideoMarketing = () => {
   return (
     <div className={styles.main}>
       <Helmet>
-        <title>Video Marketing • Solhezy</title>
+        <title>Video Marketing • Edwako</title>
         <meta
           name="description"
           content="let's get started on Video marketing"
@@ -15,7 +15,7 @@ const VideoMarketing = () => {
       <div className={styles.left}>
         <span className={styles.title}>Video Marketing</span>
 
-        <span className={styles.subheading}>How Solhezy Can Help You</span>
+        <span className={styles.subheading}>How Edwako Can Help You</span>
         <span className={styles.catchline}>
           The best channel for driving direct response
         </span>
@@ -88,9 +88,9 @@ const VideoMarketing = () => {
             </div>
           </div>
         </div>
-        <span className={styles.subheading}>How Solhezy Can Help You</span>
+        <span className={styles.subheading}>How Edwako Can Help You</span>
         <span className={styles.desc}>
-          Solhezy works with you from the beginning to understand your goals,
+          Edwako works with you from the beginning to understand your goals,
           advise you on the best strategy, and provide you with access to
           premium databases.
         </span>

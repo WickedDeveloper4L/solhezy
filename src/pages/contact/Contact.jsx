@@ -7,7 +7,7 @@ const Contact = () => {
   return (
     <div className={styles.main}>
       <Helmet>
-        <title>Contact • Solhezy</title>
+        <title>Contact • Edwako</title>
         <meta name="description" content="we want to speak with you!" />
       </Helmet>
       <div className={styles.left}>
@@ -20,9 +20,9 @@ const Contact = () => {
           reach out and contact us!
         </span>
 
-        <span className={styles.subheading}>How Solhezy Can Help You</span>
+        <span className={styles.subheading}>How Edwako Can Help You</span>
         <span className={styles.desc}>
-          Solhezy works with you from the beginning to understand your goals,
+          Edwako works with you from the beginning to understand your goals,
           advise you on the best strategy, and provide you with access to
           premium databases.
         </span>

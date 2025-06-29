@@ -6,7 +6,7 @@ const Emailmarketing = () => {
   return (
     <div className={styles.main}>
       <Helmet>
-        <title>Email Marketing • Solhezy</title>
+        <title>Email Marketing • Edwako</title>
         <meta
           name="description"
           content="let's get started on email marketing"
@@ -80,9 +80,9 @@ const Emailmarketing = () => {
             </div>
           </div>
         </div>
-        <span className={styles.subheading}>How Solhezy Can Help You</span>
+        <span className={styles.subheading}>How Edwako Can Help You</span>
         <span className={styles.desc}>
-          Solhezy works with you from the beginning to understand your goals,
+          Edwako works with you from the beginning to understand your goals,
           advise you on the best strategy, and provide you with access to
           premium databases.
         </span>
