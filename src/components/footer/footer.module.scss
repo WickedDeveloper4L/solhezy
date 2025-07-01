@@ -4,10 +4,12 @@
   justify-content: space-between;
   align-items: center;
   padding: 2rem 3rem;
-  @media screen and (max-width: 650px) {
+  @media screen and (max-width: 800px) {
+    justify-content: center;
     flex-direction: column-reverse;
-    align-items: flex-start;
-    padding: 2rem 3rem;
+    align-items: center;
+    padding: 2rem 1rem;
+    gap: 1rem;
   }
   .title {
     font-size: 3rem;
@@ -20,34 +22,44 @@
       margin: 2rem 0rem;
     }
   }
+  .logo {
+    width: 200px;
+
+    @media screen and (max-width: 800px) {
+      width: 100px;
+    }
+  }
 
   .credits {
     width: 300px;
+
+    color: #fff;
+    font-size: 0.8rem;
+    font-weight: normal;
     @media screen and (max-width: 650px) {
       display: grid;
       justify-content: center;
+      text-align: center;
       width: 100%;
     }
-    color: #fff;
-    font-size: 1rem;
-    font-weight: 500;
     @media screen and (max-width: 450px) {
       font-size: 0.7rem;
     }
   }
   .links {
     display: grid;
-    gap: 1rem;
+    gap: 0.8rem;
     text-align: right;
     @media screen and (max-width: 650px) {
       text-align: center;
-      gap: 2rem;
+      gap: 1rem;
       align-self: center;
     }
     .link {
       color: #ffffff;
       text-decoration: none;
-      font-weight: 500;
+      font-size: 0.9rem;
+      font-weight: normal;
       @media screen and (max-width: 450px) {
         font-size: 0.8rem;
       }

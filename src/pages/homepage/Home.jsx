@@ -8,29 +8,7 @@ import SYSTEME from "../../assets/systeme.png";
 import GETRESPONSE from "../../assets/getresponse_logotype_cmyk-601x219-315ab69.png";
 import MAILCHIMP from "../../assets/mailchimp-svgrepo-com.svg";
 import { Link } from "react-router-dom";
-import { useState } from "react";
-import { ImCross } from "react-icons/im";
 const Home = () => {
-  const [email, setEmail] = useState("");
-  const [newsletter, setNewsletter] = useState(true);
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    fetch("https://formsubmit.co/ajax/Isaiah_akorita@yahoo.co.uk", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        Accept: "application/json",
-      },
-      body: JSON.stringify({
-        email: email,
-      }),
-    })
-      .then((response) => response.json())
-      .then((data) => {
-        alert(data.message);
-      })
-      .catch((error) => console.log(error));
-  };
   return (
     <div className={styles.main}>
       <Hero />
@@ -43,6 +21,7 @@ const Home = () => {
           solutions.
         </span>
       </div>
+      <div className={styles.banner1}></div>
       <div className={styles.services}>
         <div className={styles.tile}>
           <img src={EMAIL} alt="email marketing" className={styles.svg} />
@@ -79,6 +58,7 @@ const Home = () => {
           </Link>
         </div>
       </div>
+
       <div className={styles.second}>
         <h1 className={styles.title}>Badged Member of</h1>
         <div className={styles.orgs}>
@@ -88,30 +68,7 @@ const Home = () => {
           <img src={SYSTEME} alt="systeme" className={styles.org_img} />
         </div>
       </div>
-      {newsletter && (
-        <form onSubmit={handleSubmit} className={styles.newsletter}>
-          <span className={styles.text}>Be the first to know.</span>
-          <input
-            type="email"
-            required
-            name="email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            className={styles.input}
-          />
-          <button className={styles.btn} value="submit" type="submit">
-            Subscribe
-          </button>
-          <span className={styles.subtext}>
-            Recieve news, promotions and products by email from Edwako. You can
-            unsubscribe whenever you want.
-          </span>
-          <ImCross
-            onClick={() => setNewsletter(false)}
-            className={styles.close}
-          />
-        </form>
-      )}
+      <div className={styles.banner2}></div>
     </div>
   );
 };

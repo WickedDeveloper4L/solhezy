@@ -2,6 +2,7 @@ import styles from "./emailmarketing.module.scss";
 import ListItem from "../../components/list item/ListItem";
 import PageContact from "../../components/page-contact/pageContact";
 import { Helmet } from "react-helmet";
+import COVER from "../../assets/emailmarketing.jpg";
 const Emailmarketing = () => {
   return (
     <div className={styles.main}>
@@ -13,7 +14,8 @@ const Emailmarketing = () => {
         />
       </Helmet>
       <div className={styles.left}>
-        <span className={styles.title}>Email Marketing</span>
+        <span className={styles.title}>Email Marketing</span>{" "}
+        <img src={COVER} alt="logo" className={styles.cover} />
         <span className={styles.catchline}>
           The best channel for driving direct response
         </span>

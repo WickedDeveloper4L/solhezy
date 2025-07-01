@@ -2,6 +2,7 @@ import { Helmet } from "react-helmet";
 import ListItem from "../../components/list item/ListItem";
 import PageContact from "../../components/page-contact/pageContact";
 import styles from "./videomarketing.module.scss";
+import COVER from "../../assets/videomarketing.jpg";
 const VideoMarketing = () => {
   return (
     <div className={styles.main}>
@@ -14,7 +15,7 @@ const VideoMarketing = () => {
       </Helmet>
       <div className={styles.left}>
         <span className={styles.title}>Video Marketing</span>
-
+        <img src={COVER} alt="logo" className={styles.cover} />
         <span className={styles.subheading}>How Edwako Can Help You</span>
         <span className={styles.catchline}>
           The best channel for driving direct response

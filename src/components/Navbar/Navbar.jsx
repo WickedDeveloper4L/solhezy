@@ -4,6 +4,7 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { FaSearch } from "react-icons/fa";
 import { ImCross } from "react-icons/im";
 import { useState } from "react";
+import LOGO from "../../assets/logo.png"; // Assuming you have a logo image
 const Navbar = () => {
   const [menu, setMenu] = useState(false);
   return (
@@ -14,9 +15,7 @@ const Navbar = () => {
           onClick={() => setMenu(true)}
         />
         <div className={styles.first}>
-          <div className={styles.name_div}>
-            <h1 className={styles.name}>Edwako</h1>
-          </div>
+          <img src={LOGO} alt="logo" className={styles.logo} />
         </div>
         <div className={styles.links}>
           <NavLink to="/" className={styles.link}>

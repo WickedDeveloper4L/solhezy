@@ -11,13 +11,16 @@
   .left {
     display: grid;
     gap: 1rem;
+    width: 100%;
     .title {
       font-size: 3.5rem;
       font-weight: 700;
       font-family: "Rubik", sans-serif;
       color: #006dff;
     }
-
+    .cover {
+      width: 100%;
+    }
     .catchline {
       font-size: 1.8rem;
       font-weight: 600;

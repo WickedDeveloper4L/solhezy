@@ -1,13 +1,13 @@
 import { Link } from "react-router-dom";
 import styles from "./footer.module.scss";
-
+import LOGO from "../../assets/logo.png"; // Assuming you have a logo image
 const Footer = () => {
   return (
     <div className={styles.footer}>
       <div className={styles.credits}>
         <p>©Copyright 2024 Edwako Digital marketing Agency</p>
       </div>
-      <h1 className={styles.title}>Edwako</h1>
+      <img src={LOGO} alt="logo" className={styles.logo} />
       <div className={styles.links}>
         <Link to="/" className={styles.link}>
           Home
@@ -21,11 +21,11 @@ const Footer = () => {
         <Link to="video_marketing" className={styles.link}>
           Video Marketing
         </Link>
-        <Link to="about" className={styles.link}>
-          About
+        <Link to="terms" className={styles.link}>
+          Terms & Conditions
         </Link>
-        <Link to="contact" className={styles.link}>
-          Contact
+        <Link to="privacy" className={styles.link}>
+          Privacy Policy
         </Link>
       </div>
     </div>

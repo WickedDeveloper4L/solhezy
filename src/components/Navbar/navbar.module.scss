@@ -12,14 +12,11 @@
       padding: 1rem 2rem;
     }
     .first {
-      .name_div {
-        display: grid;
-        row-gap: 0rem;
+      .logo {
+        width: 120px;
 
-        .name {
-          font-size: 2rem;
-          font-weight: 700;
-          font-family: "Rubik", sans-serif;
+        @media screen and (max-width: 850px) {
+          width: 90px;
         }
       }
     }
@@ -48,7 +45,7 @@
     .hamburger {
       display: none;
       font-size: 2rem;
-      color: #ff5810;
+      color: #ffffff;
       @media screen and (max-width: 850px) {
         display: block;
       }
@@ -56,6 +53,7 @@
 
     .search {
       display: none;
+      visibility: hidden;
       font-size: 2rem;
       color: #ffffff;
       @media screen and (max-width: 850px) {
@@ -71,7 +69,7 @@
     top: 0;
     z-index: 100;
     width: 90%;
-    padding: 1rem;
+    padding: 0.8rem 0.1rem;
     display: flex;
     flex-direction: column;
     gap: 1rem;
@@ -79,18 +77,7 @@
     @media screen and (min-width: 850px) {
       display: none;
     }
-    .name_div {
-      display: grid;
-      row-gap: 0rem;
-      align-self: center;
-      margin-bottom: 2rem;
-      color: #006dff;
 
-      .name {
-        font-size: 3rem;
-        font-weight: 700;
-      }
-    }
     .links {
       display: grid;
       grid-template-columns: 1fr;
@@ -102,7 +89,7 @@
         color: #000000;
         text-transform: uppercase;
         font-size: 1.2rem;
-        font-weight: 700;
+        font-weight: 600;
         text-align: center;
       }
     }
@@ -110,8 +97,8 @@
     .cross {
       position: absolute;
       top: 1rem;
-      left: 1rem;
-      color: #ff5810;
+      right: 1rem;
+      color: #000000;
     }
   }
 }

@@ -2,6 +2,7 @@ import { Helmet } from "react-helmet";
 import ListItem from "../../components/list item/ListItem";
 import styles from "./datascience.module.scss";
 import PageContact from "../../components/page-contact/pageContact";
+import COVER from "../../assets/datascience.jpg";
 const DataScience = () => {
   return (
     <div className={styles.main}>
@@ -10,7 +11,8 @@ const DataScience = () => {
         <meta name="description" content="let's get started on data." />
       </Helmet>
       <div className={styles.left}>
-        <span className={styles.title}>Data Science</span>
+        <span className={styles.title}>Data Science</span>{" "}
+        <img src={COVER} alt="logo" className={styles.cover} />
         <span className={styles.catchline}>The Power of Data</span>
         <span className={styles.desc}>
           Today, your company generates a large amount of data that, if treated
@@ -21,7 +23,6 @@ const DataScience = () => {
           Marketing Strategists, we can leverage all this data to generate
           high-level business intelligence.
         </span>
-
         <span className={styles.subheading}>
           How Edwako Can Use Data To Help You
         </span>
